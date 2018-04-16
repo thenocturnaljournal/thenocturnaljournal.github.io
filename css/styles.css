@@ -1,0 +1,241 @@
+body {
+  background: #266cd6;
+  color: white;
+  cursor: pointer;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+}
+
+h1 {
+  background: #266cd6;
+  font-size: 3rem;
+  padding: 20px;
+  margin: 0 0 100px 0;
+  text-align: center;
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+body .one {
+  background-image: url(../mockups/one.jpg);
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+}
+
+body .one h1 {
+  position: relative;
+  top: 40%;
+}
+
+body .one:after {
+  animation: grain 8s steps(10) infinite;
+  background-image: url("../mockups/grain.png");
+  content: "";
+  height: 300%;
+  left: -50%;
+  opacity: 0.05;
+  position: fixed;
+  top: -100%;
+  width: 300%;
+}
+
+body .two {
+  background-image: url(../mockups/two.jpg);
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+}
+
+body .two h1 {
+  position: relative;
+  top: 33%;
+}
+
+body .two:after {
+  animation: grain 8s steps(10) infinite;
+  background-image: url("../mockups/grain.png");
+  content: "";
+  height: 300%;
+  left: -50%;
+  opacity: 0.05;
+  position: fixed;
+  top: -100%;
+  width: 300%;
+}
+
+body .three {
+  background-image: url(../mockups/three.jpg);
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+}
+
+body .three h1 {
+  position: relative;
+  top: 20%;
+}
+
+body .three:after {
+  animation: grain 8s steps(10) infinite;
+  background-image: url("../mockups/grain.png");
+  content: "";
+  height: 300%;
+  left: -50%;
+  opacity: 0.05;
+  position: fixed;
+  top: -100%;
+  width: 300%;
+}
+
+@keyframes grain {
+  0%,
+  100% {
+    transform: translate(0, 0)
+  }
+  10% {
+    transform: translate(-5%, -10%)
+  }
+  20% {
+    transform: translate(-15%, 5%)
+  }
+  30% {
+    transform: translate(7%, -25%)
+  }
+  40% {
+    transform: translate(-5%, 25%)
+  }
+  50% {
+    transform: translate(-15%, 10%)
+  }
+  60% {
+    transform: translate(15%, 0%)
+  }
+  70% {
+    transform: translate(0%, 15%)
+  }
+  80% {
+    transform: translate(3%, 35%)
+  }
+  90% {
+    transform: translate(-10%, 10%)
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  body .one {
+    background-image: url(../mockups/one_mobile.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: block;
+    height: 100vh;
+    width: 100%;
+  }
+  body .two {
+    background-image: url(../mockups/two_mobile.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: block;
+    height: 100vh;
+    width: 100%;
+  }
+  body .two h1 {
+    position: relative;
+    top: 25%;
+  }
+  body .three {
+    background-image: url(../mockups/three_mobile.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: block;
+    height: 100vh;
+    width: 100%;
+  }
+  body .three h1 {
+    position: relative;
+    top: 12.5%;
+  }
+}
+
+/* These cards are a tribute to Vietnamese 
+rapper Suboi. Not quite sure where the 
+plagiarism lines are, so I figured I'd 
+cite my inspiration. 
+
+The postcards reflect Rice Creative's design 
+of Suboi's 2.7 EP (2017). 
+
+The phrases I've used are a type of ancient 
+Vietnamese pun (or noi lai).In old literature, 
+scholars used noi lai to challenge each other-- 
+sorta like a punny rap battle. One person would 
+come up with 2 verses on the spot, then the other 
+person would reply with 2 homophonic verses. These 
+lines would have ironic (and usually humorous) meanings. 
+
+For example, "bat mi bi mat bi mat" translates to 
+"spill the secret that got stolen." 
+	<!-- bat mi (spill the beans) bi mat (secret)  
+	bi mat (got stolen, taken away)  -->
+	<!-- dau tien (first off, to begin with) tien dau 
+	(where’s the money)  -->
+
+I chose these elements (Vietnamese, noi lai, and SUBOI) 
+for specific reasons:
+
+	1. Most google web fonts aren't suited for every 
+	written language. Vietnamese has one of the most 
+	complex diacritic systems in the world. I wanted 
+	to find and use typefaces that supported these accents.
+
+	2. Ya girl loves puns. 
+	Vietnamese puns look even better than English ones
+	(and are more sophisticated in craft, which doesn't hurt).
+
+	3. Suboi is the first-- and only-- queen of Vietnamese hip hop. 
+	Vietnamese music is only just now starting to incorporate 
+	genres like hip hop and dance pop into their industry, and it 
+	seems like she was one of the catalysts. Her music isn't the
+	best when compared to the production we're used to, but 
+	compared to the old folk songs, it's much more innovative and
+	expressive.
+
+	4. Vietnam is kind of going through a music 
+	crisis right now-- contemporary vs. traditional. 
+	Which will win?! Tune in next week to find out more!! 
+	Because of the conservative majority tastes, there are a 
+	lot of Vietnamese censorship laws that make common topics 
+	of rap completely off-limits. No sex. No drugs. No illegal 
+	activity. Suboi is dope at using metaphors to get around these 
+	censorship laws. How does she do it, you ask? By using old 
+	literary techniques like-- you guessed it-- noi lai!! Dude! 
+	Can u imagine if kanye rapped in shakespearean english?? 
+	would be wild.
+
+	5. Rice Creative is a big branding studio in Vietnam / 
+	kinda sorta internationally right now. I love that they're 
+	doing so well bc Vietnam doesn't have a reputation for 
+	being a design hotspot. Wanna show my love.
+
+tl,dr; basically i think it's cool that there's a badass 
+woman in Vietnam making contemporary music better than 
+most of her peers and she's doing it while using sophisticated 
+literary techniques. 
+
+okay so this started as a citation and is now a mini-essay. 
+
+oops bye
+
+*/

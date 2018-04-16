@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>11. responsive</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link href="css/normalize.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&amp;subset=latin-ext,vietnamese" rel="stylesheet">
+    <link rel="icon" href="mockups/tomato_circle_icon.gif" type="image/gif">
+
+    <!-- animsition.css -->
+    <link rel="stylesheet" href="../animsition-master/dist/css/animsition.min.css">
+
+  </head>
+
+  <body>
+    <div class="animsition">
+      <a class="animsition-link" href="two.html">
+        <div class="one">
+          <h1>nói lái</h1>
+        </div>
+      </a>
+    </div>
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- animsition.js -->
+    <script src="../animsition-master/dist/js/animsition.min.js"></script>
+    <script src="../grained-master/grained.js"></script>
+    <script>
+      $(document).ready(function() {
+        $(".animsition").animsition({
+          inClass: 'fade-in-up-sm',
+          outClass: 'fade-out-up-sm',
+          inDuration: 1500,
+          outDuration: 800,
+          linkElement: '.animsition-link',
+          // e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'
+          loading: true,
+          loadingParentElement: 'body', //animsition wrapper element
+          loadingClass: 'animsition-loading',
+          loadingInner: '', // e.g '<img src="loading.svg" />'
+          timeout: false,
+          timeoutCountdown: 5000,
+          onLoadEvent: true,
+          browser: ['animation-duration', '-webkit-animation-duration'],
+          // "browser" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
+          // The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
+          overlay: false,
+          overlayClass: 'animsition-overlay-slide',
+          overlayParentElement: 'body',
+          transition: function(url) {
+            window.location.href = url;
+          }
+        });
+      });
+
+    </script>
+
+
+  </body>
+
+</html>
